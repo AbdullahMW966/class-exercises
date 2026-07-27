@@ -109,14 +109,6 @@ func main() {
 		run_txn(client, client_id)
         run_read_txn(client, client_id)
 	}
-
-	args := &Args{}
-	var reply Reply
-	err = client.Call("KVServer.Dump",args, &reply)
-	if(err != nil) {
-		log.Fatal(err)
-	}
-	log.Println(reply)
 }
 ```
 
