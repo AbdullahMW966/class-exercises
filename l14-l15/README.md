@@ -122,13 +122,11 @@ func main() {
 
 **Do not call Lock/Unlock YET**
 
-Create a transaction in `run_txn` that does some combination of puts on certain variables.
+Create a transaction in `run_txn` that does some combination of puts on certain variables. The choice of which variables and what values is up to you!
+Talk to your partner as they also create a writing transaction that also performs a series of puts.
 
-Talk to your partner as they create a transaction that also performs a series of puts.
-
-Work together: What are the serializable results from concurrently running your two transactions? 
-
-Your two transactions should **overlap** in variables such that you observe unserializable results (i.e. you should perform conflicting updates to the same variables).
+**Work together:** What are the serializable results from concurrently running your two transactions? 
+You should design your two transactions so that they **overlap** in 2+ variables. It should be possible to observe unserializable results if the two transactions run concurrently (i.e. you should perform conflicting updates to the same variables).
 
 For example:
 
