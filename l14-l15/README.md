@@ -156,7 +156,7 @@ x=10 y=40
 
 Complete `run_read_txn` to read relevant variables prints an error message if it observes unserializable results.
 
-> [!IMPOTANT]
+> [!IMPORTANT]
 > - Complete the implementation of `run_txn` as described
 > - Complete the implementation of `run_read_txn` to print an error message on observation of unserializable results
 
@@ -207,7 +207,7 @@ Your `run_read_txn` function should flag unserializable results as we have no co
 If you do not observe the error message, try again until you do.
 
 
-> [!IMPOTANT]
+> [!IMPORTANT]
 > - Observe the printed error message from `run_read_txn`
 
 ### Implementing 2PL
@@ -215,7 +215,7 @@ If you do not observe the error message, try again until you do.
 You will now implement two-phase locking in both of your transactions.
 Once your partner also completes the implementation re-run your tests.
 
-> [!IMPOTANT]
+> [!IMPORTANT]
 > - Add the correct `Lock` and `Unlock` calls to your `run_txn` and `run_read_txn`. 
 > You should no longer observe unserializable results.
 
