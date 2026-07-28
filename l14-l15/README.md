@@ -190,6 +190,9 @@ Then, both partners should simultaneously run:
 go run txn.go
 ```
 
+Note: Testing may work better if you start transaction on the computer that is **not** running the lockserver just slightly earlier.
+This way, there is a decreased a possibility that the quicker local transaction will occur entirely before the remote partner's transaction starts.
+
 ### Unserializable Results
 
 Your `run_read_txn` function should flag unserializable results as we have no concurrency control mechanism implemented!
